@@ -40,7 +40,7 @@ stages:
     - script: |
         composer install
       displayName: 'Install PHP dependencies'
-    - script: sudo chmod 0755 ./phpunit
+    - script: sudo chmod 0755 ./vendor/bin/phpunit
       displayName: 'Make phpunit script runnable'
 
     - script: vendor/bin/phpunit tests/test1.php
