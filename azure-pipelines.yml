@@ -40,7 +40,7 @@ stages:
     - script: |
         composer install
       displayName: 'Install PHP dependencies'
-    - script: ./phpunit
+    - script: vendor/bin/phpunit tests/test1.php
       displayName: 'Run tests with phpunit'
 
     - task: ArchiveFiles@2
