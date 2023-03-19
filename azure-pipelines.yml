@@ -44,8 +44,17 @@ stages:
       displayName: 'Make phpunit script runnable'
 
     - script: vendor/bin/phpunit tests/test1.php
-      displayName: 'Run tests with phpunit'
+      displayName: 'Run test 1 with phpunit'
       continueOnError: true
+    - script: vendor/bin/phpunit tests/test1.php
+      displayName: 'Run test 2 with phpunit'
+      continueOnError: true
+    - script: vendor/bin/phpunit tests/test1.php
+      displayName: 'Run test 3 with phpunit'
+      continueOnError: true
+    #- script: ./vendor/bin/phpcs –standard=PSR2 ./
+      #displayName: 'Quality code verification' 
+      
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
