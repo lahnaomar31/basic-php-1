@@ -1,5 +1,6 @@
 <?php
 
+namespace PHPUnit\Framework;
 class test2 extends \PHPUnit\Framework\TestCase
 {
 
