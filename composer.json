@@ -1,5 +1,10 @@
 {
     "require": {
-        "nesbot/carbon": "2.53.*"
+        "nesbot/carbon": "2.53.*",
+        "symfony/http-client": "^6.2",
+        "monolog/monolog": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
     }
 }
